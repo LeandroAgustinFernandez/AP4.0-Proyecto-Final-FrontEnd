@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: relative;
+    background-color: #1F2E55;
+    padding: 0 1rem;
+}
+
+header .navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header .navbar .navbar-button {
+    align-self: flex-end;
+    max-width: 48px;
+    padding: .6em .8em;
+    margin: 1em 0;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    display: none;
+}
+
+header .navbar .navbar-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .navbar .navbar-list .navbar-item {
+    padding: 1rem 0;
+}
+
+header .navbar .navbar-list .navbar-link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+}
+
+section {
+    height: 100vh;
+    background-color: rgb(250, 250, 250);
+}
+
+.about {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(22, 22, 22);
+}
+
+.about .about-name {
+    font-size: 4.5rem;
+    margin-bottom: .5em;
+}
+
+.about .about-info {
+    font-size: 1.3rem;
+    margin: .3em 0;
+}
+
+.about .about-name span {
+    color: #C3C3C3;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4em 2em;
+}
+
+.information article {
+    padding-top: 1em;
+}
+
+.information .information-title {
+    font-size: 2.7rem;
+}
+
+.information .information-company {
+    font-size: 1.2rem;
+    color: #C3C3C3;
+}
+
+.information .information-date {
+    font-size: .9rem;
+    padding: .3em 0;
+}
+
+.information .information-text {
+    font-size: 1rem;
+    padding: 1em 0;
+}
+
+.information .skill-container {
+    border-bottom: 1px solid #c3c3c3;
+}
+
+.information .skill-action {
+    display: flex;
+    margin-top: 1em;
+}
+
+.information .skill-action .fa-solid {
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.information .skill-action .skill-type {
+    margin: 0 1em 1em 0;
+    font-weight: bold;
+}
+
+.information .skill-list {
+    list-style: none;
+    display: none;
+    margin-bottom: 1.5em;
+}
+
+.information .skill-list li {
+    padding: .1em 1em;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    header {
+        position: sticky;
+        top:0;
+    }
+
+    header .navbar {
+        min-height: auto;
+    }
+
+    header .navbar .navbar-button {
+        display: block;
+    }
+
+    header .navbar .navbar-list {
+        text-align: end;
+        display: none;
+    }
+
+    header .navbar .navbar-list .navbar-item {
+        padding: .3em 0;
+    }
+
+    .about .about-name {
+        font-size: 3.5rem;
+        margin-bottom: .5em;
+    }
+
+    .about .about-info {
+        font-size: 1rem;
+    }
+
+    .information .information-title {
+        font-size: 2rem;
+        margin-bottom: 1.5em;
+    }
+
+    .information .information-position {
+        font-size: 1.3rem;
+    }
+
+    .information .information-company {
+        font-size: 1.2rem;
+    }
+
+    .information .information-date {
+        font-size: .9rem;
+        padding: .3em 0;
+    }
+
+    .information .information-text {
+        display: none;
+    }
+}
